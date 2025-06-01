@@ -16,7 +16,7 @@ const Footer = () => {
             <Button isIconOnly as={Link} href="https://x.com/nullonestudio" target="_blank" className="bg-transparent text-white">
               <Image src={Xicon} alt='X' width={25} height={25} />
             </Button>
-            <Button isIconOnly as={Link} href="https://x.com/nullonestudio" target="_blank" className="bg-transparent text-white">
+            <Button isIconOnly as={Link} href="https://www.linkedin.com/in/appforge-%25E2%2580%258E-057981368" target="_blank" className="bg-transparent text-white">
               <Image src={LinkedinIcon} alt='Linkedin' width={25} height={25} />
             </Button>
             <Button isIconOnly as={Link} href="https://x.com/nullonestudio" target="_blank" className="bg-transparent text-white">
