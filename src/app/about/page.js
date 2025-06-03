@@ -8,14 +8,14 @@ const page = () => {
           <p className="text-[#111418] tracking-light text-[32px] font-bold leading-tight min-w-72">About Appforge</p>
         </div>
         <p className="text-[#111418] text-base font-normal leading-normal pb-3 pt-1 px-4">
-          At Appforge, we&aposre more than just a web and mobile application agency; we&aposre a team of passionate innovators dedicated to transforming ideas into
+          At Appforge, we&apos;re more than just a web and mobile application agency. we&apos;re a team of passionate innovators dedicated to transforming ideas into
           impactful digital solutions. Our journey began with a shared vision: to bridge the gap between technology and creativity, delivering bespoke applications that
           resonate with users and drive business growth.
         </p>
         <h2 className="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Our Mission</h2>
         <p className="text-[#111418] text-base font-normal leading-normal pb-3 pt-1 px-4">
           Our mission is to empower businesses with cutting-edge technology, crafting digital experiences that are not only functional but also intuitive and engaging. We
-          strive to understand our clients&apos unique challenges and goals, tailoring our approach to ensure every project aligns perfectly with their vision.
+          strive to understand our clients&apos; unique challenges and goals, tailoring our approach to ensure every project aligns perfectly with their vision.
         </p>
         <h2 className="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Our Values</h2>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
@@ -106,7 +106,7 @@ const page = () => {
         <h2 className="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Client Collaboration</h2>
         <p className="text-[#111418] text-base font-normal leading-normal pb-3 pt-1 px-4">
           Collaboration is at the heart of our process. We view our clients as partners, working closely with them to bring their vision to life. Regular updates, feedback
-          sessions, and a dedicated point of contact ensure a seamless and productive partnership. Your success is our success, and we&aposre committed to achieving it together.
+          sessions, and a dedicated point of contact ensure a seamless and productive partnership. Your success is our success, and we&apos;re committed to achieving it together.
         </p>
         <h2 className="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Our Journey</h2>
         <div className="grid grid-cols-[40px_1fr] gap-x-2 px-4">
@@ -128,7 +128,7 @@ const page = () => {
 
         </div>
         <p className="text-base font-normal leading-normal pb-3 pt-1 px-4 my-4">
-          Founded in 2025, we&aposre a newly launched software agency with bold ambitions and a clear mission — to deliver exceptional digital solutions that solve real-world problems. While we&aposre just getting started, our foundation is built on strong expertise, creativity, and a commitment to client success. We&aposre excited to kick off this journey, build lasting partnerships, and bring innovative ideas to life, one project at a time.
+          Founded in 2025, we&apos;re a newly launched software agency with bold ambitions and a clear mission — to deliver exceptional digital solutions that solve real-world problems. While we&apos;re just getting started, our foundation is built on strong expertise, creativity, and a commitment to client success. We&apos;re excited to kick off this journey, build lasting partnerships, and bring innovative ideas to life, one project at a time.
         </p>
       </div>
     </div>

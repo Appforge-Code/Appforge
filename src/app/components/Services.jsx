@@ -1,9 +1,9 @@
 import React from 'react'
-import { Card, CardHeader, CardFooter, Image, Button } from "@heroui/react"
+import { Card, CardHeader, Image } from "@heroui/react"
 
 const Services = () => {
     return (
-        <div>
+        <div>''
             <h2 className="text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-5">Our Services</h2>
             <div className="flex flex-col gap-10 px-4 py-2 @container">
                 <div className="flex flex-col gap-4">
@@ -13,7 +13,7 @@ const Services = () => {
                         Comprehensive Solutions for Your Digital Needs
                     </h1>
                     <p className="text-[#0c131d] text-base font-normal leading-normal max-w-[720px]">
-                        From concept to deployment, we offer a full suite of services to bring your vision to life.
+                        From concept to deployment, we&apos;re offer a full suite of services to bring your vision to life.
                     </p>
                 </div>
                 <div className="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">

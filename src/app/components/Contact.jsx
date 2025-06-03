@@ -15,7 +15,7 @@ const Contact = () => {
                         Ready to Start Your Project?
                     </h1>
                     <p className="text-base font-normal leading-normal max-w-[720px">
-                        Contact us today for a free consultation and let's discuss how we can help you achieve your business goals.
+                        Contact us today for a free consultation and let&apos;s discuss how we can help you achieve your business goals.
                     </p>
                 </div>
                 <div className="flex flex-1 justify-center">

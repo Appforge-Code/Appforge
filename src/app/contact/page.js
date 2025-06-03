@@ -10,7 +10,7 @@ const page = () => {
                     <div className="flex min-w-72 flex-col gap-3">
                         <p className="text-[#121417] tracking-light text-[32px] font-bold leading-tight">Get in Touch</p>
                         <p className="text-[#687482] text-sm font-normal leading-normal">
-                            We're excited to hear from you. Fill out the form below or reach out via the contact details provided.
+                            We&apos;re excited to hear from you. Fill out the form below or reach out via the contact details provided.
                         </p>
                     </div>
                 </div>

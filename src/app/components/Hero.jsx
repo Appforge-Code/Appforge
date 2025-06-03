@@ -19,7 +19,7 @@ const Hero = () => {
                             Crafting Digital Experiences That Drive Success
                         </h1>
                         <h2 className="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                            We are a leading web and mobile application agency specializing in ReactJS, NextJS, NodeJS, Flutter, and Dart. Our team of experts delivers innovative
+                            We&apos;re a leading web and mobile application agency specializing in ReactJS, NextJS, NodeJS, Flutter, and Dart. Our team of experts delivers innovative
                             solutions tailored to your business needs.
                         </h2>
                     </div>
