@@ -16,7 +16,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Appforge",
+  title: "AppForge",
   description: "AppForge is a forward-thinking software development agency.",
 };
 

@@ -45,7 +45,7 @@ const Navibar = () => {
                 </NavbarBrand>
                 <NavbarContent className="hidden sm:flex gap-4" justify="end">
                     <NavbarItem>
-                        <Link color="foreground" href="#">
+                        <Link  href="#">
                             Services
                         </Link>
                     </NavbarItem>
@@ -59,7 +59,7 @@ const Navibar = () => {
                         <a className="text-sm font-medium leading-normal" href="#">Career</a>
                     </NavbarItem>
                     <NavbarItem>
-                        <Button as={Link} href="#" color='primary' radius='sm' >Request a Quote</Button>
+                        <Button as={Link} href="#contact-us" color='primary' radius='sm' >Request a Quote</Button>
                     </NavbarItem>
                 </NavbarContent>
 
