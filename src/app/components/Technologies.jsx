@@ -3,11 +3,11 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import node from "../../../public/Icons/Node.png"
-import next from "../../../public/Icons/Next.png"
-import flutter from "../../../public/Icons/Flutter.png"
-import react from "../../../public/Icons/React.png"
-import dart from "../../../public/Icons/Dart.png"
+import node from "../../../public/Icons/NodeJS.svg"
+import next from "../../../public/Icons/NextJS.svg"
+import flutter from "../../../public/Icons/Flutter.svg"
+import react from "../../../public/Icons/ReactJS.svg"
+import dart from "../../../public/Icons/Dart.svg"
 
 
 const imageUrls = [
@@ -24,7 +24,7 @@ const Technologies = () => {
             </h2>
 
             <motion.div
-                className="flex gap-16"
+                className="flex gap-12"
                 animate={{ x: ['0%', '-50%'] }}
                 transition={{
                     repeat: Infinity,

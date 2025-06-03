@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { Button, Link } from "@heroui/react";
 import Image from 'next/image';

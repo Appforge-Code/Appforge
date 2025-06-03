@@ -1,6 +1,8 @@
 import { Geist, Montserrat } from "next/font/google";
 import "./globals.css";
 import HeroUIWrapper from "./HeroUIWrapper";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,8 +26,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${montserrat.variable} antialiased`}
       >
+        <Navbar />
         <HeroUIWrapper>{children}</HeroUIWrapper>
-
+        <Footer />
       </body>
     </html>
   );

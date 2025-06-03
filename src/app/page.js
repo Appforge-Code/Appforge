@@ -10,14 +10,12 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <main className="font-sans">
-      <Navbar />
       <div className="px-40 py-5 max-md:px-0">
         <Hero />
         <Services />
         <Technologies />
         <Contact />
       </div>
-      <Footer />
     </main>
   );
 }

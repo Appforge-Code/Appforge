@@ -1,7 +1,9 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import AppforgeIcon from "../../../public/Appforge.png"
 import { Button } from '@heroui/react'
+import Link from 'next/link'
 
 const Navbar = () => {
     return (
@@ -10,14 +12,14 @@ const Navbar = () => {
                 <div className="size-10">
                     <Image src={AppforgeIcon} alt="Appforge Icon" width={100} height={100} />
                 </div>
-                <h2 className="text-lg font-bold leading-tight tracking-[-0.015em] uppercase">Appforge</h2>
+                <h2 className="text-lg font-bold leading-tight tracking-[-0.015em] uppercase"><Link href={"/"} className="text-sm font-medium leading-normal" >Appforge</Link></h2>
             </div>
             <div className="flex flex-1 justify-end gap-8 max-md:hidden">
                 <div className="flex items-center gap-9">
                     <a className="text-sm font-medium leading-normal" href="#">Services</a>
-                    <a className="text-sm font-medium leading-normal" href="#">Technologies</a>
-                    <a className="text-sm font-medium leading-normal" href="#">Case Studies</a>
-                    <a className="text-sm font-medium leading-normal" href="#">Testimonials</a>
+                    <Link href={"/about"} className="text-sm font-medium leading-normal" >About</Link>
+                    <Link href={"/contact"} className="text-sm font-medium leading-normal" >Contact</Link>
+                    <a className="text-sm font-medium leading-normal" href="#">Career</a>
                 </div>
 
                 <Button color='primary' radius='sm' >Request a Quote</Button>
