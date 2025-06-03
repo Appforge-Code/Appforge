@@ -1,32 +1,86 @@
 'use client'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import AppforgeIcon from "../../../public/Appforge.png"
-import { Button } from '@heroui/react'
+import {
+    Navbar,
+    NavbarBrand,
+    NavbarMenuToggle,
+    NavbarMenuItem,
+    NavbarMenu,
+    NavbarContent,
+    NavbarItem,
+    Button,
+} from "@heroui/react";
 import Link from 'next/link'
+import { usePathname } from "next/navigation";
 
-const Navbar = () => {
+
+const Navibar = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const pathname = usePathname();
+    const menuItems = [
+        "Services",
+        "About",
+        "Contact",
+        "Career",
+        "Request a Quote"
+    ];
+
+    useEffect(() => {
+        setIsMenuOpen(false);
+    }, [pathname]);
+    
     return (
-        <header className="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e6ecf4] px-10 py-3">
-            <div className="flex items-center gap-1 text-[#1A191E]">
-                <div className="size-10">
-                    <Image src={AppforgeIcon} alt="Appforge Icon" width={100} height={100} />
-                </div>
-                <h2 className="text-lg font-bold leading-tight tracking-[-0.015em] uppercase"><Link href={"/"} className="text-sm font-medium leading-normal" >Appforge</Link></h2>
-            </div>
-            <div className="flex flex-1 justify-end gap-8 max-md:hidden">
-                <div className="flex items-center gap-9">
-                    <a className="text-sm font-medium leading-normal" href="#">Services</a>
-                    <Link href={"/about"} className="text-sm font-medium leading-normal" >About</Link>
-                    <Link href={"/contact"} className="text-sm font-medium leading-normal" >Contact</Link>
-                    <a className="text-sm font-medium leading-normal" href="#">Career</a>
-                </div>
+        <>
+            <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
+                <NavbarBrand className='gap-1'>
+                    <Image src={AppforgeIcon} alt="Appforge Icon" width={40} height={40} />
+                    <h2 className="text-lg font-bold leading-tight tracking-[-0.015em] uppercase"><Link href={"/"} className="text-sm font-medium leading-normal" >Appforge</Link></h2>
+                    <NavbarContent className="sm:hidden" justify="end">
+                        <NavbarMenuToggle
+                            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+                        />
+                    </NavbarContent>
+                </NavbarBrand>
+                <NavbarContent className="hidden sm:flex gap-4" justify="end">
+                    <NavbarItem>
+                        <Link color="foreground" href="#">
+                            Services
+                        </Link>
+                    </NavbarItem>
+                    <NavbarItem >
+                        <Link href={"/about"} className="text-sm font-medium leading-normal" >About</Link>
+                    </NavbarItem>
+                    <NavbarItem>
+                        <Link href={"/contact"} className="text-sm font-medium leading-normal" >Contact</Link>
+                    </NavbarItem>
+                    <NavbarItem>
+                        <a className="text-sm font-medium leading-normal" href="#">Career</a>
+                    </NavbarItem>
+                    <NavbarItem>
+                        <Button as={Link} href="#" color='primary' radius='sm' >Request a Quote</Button>
+                    </NavbarItem>
+                </NavbarContent>
 
-                <Button color='primary' radius='sm' >Request a Quote</Button>
-
-            </div>
-        </header>
+                <NavbarMenu>
+                    {menuItems.map((item, index) => (
+                        <NavbarMenuItem key={`${item}-${index}`}>
+                            <Link
+                                className="w-full"
+                                color={
+                                    index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
+                                }
+                                href={`/${item.toLowerCase()}`}
+                                size="lg"
+                            >
+                                {item}
+                            </Link>
+                        </NavbarMenuItem>
+                    ))}
+                </NavbarMenu>
+            </Navbar></>
     )
 }
 
-export default Navbar
+export default Navibar

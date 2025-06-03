@@ -1,5 +1,6 @@
+'use client'
 import React from 'react'
-import { Input } from "@heroui/input";
+import { Input,Button } from "@heroui/react";
 
 const page = () => {
     return (
@@ -41,11 +42,7 @@ const page = () => {
                     </label>
                 </div>
                 <div className="flex px-4 py-3 justify-start">
-                    <button
-                        className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#bfd3ec] text-[#121417] text-sm font-bold leading-normal tracking-[0.015em]"
-                    >
-                        <span className="truncate">Send Message</span>
-                    </button>
+                    <Button color='primary' radius='sm' >Send Message</Button>
                 </div>
 
             </div>
