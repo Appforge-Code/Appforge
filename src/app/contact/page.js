@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { Input, Button, addToast, Image } from "@heroui/react";
 import emailjs from '@emailjs/browser';
 
-const page = () => {
+const Page = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -128,4 +128,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page 
