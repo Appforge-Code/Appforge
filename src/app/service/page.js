@@ -70,7 +70,7 @@ const page = () => {
               We offer a <span className="font-bold text-sm">2%</span> to{" "}
               <span className="font-bold text-sm">5%</span> commission to
               individuals or affiliates who successfully bring in new clients.
-              The exact percentage is based on the project's scope and budget.
+              The exact percentage is based on the project&apos;s scope and budget.
             </p>
           </div>
         </div>
