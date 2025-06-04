@@ -4,11 +4,13 @@ const { heroui } = require("@heroui/react");
 module.exports = {
   content: [
     "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-montserrat)', 'sans-serif'],
+        sans: ["var(--font-montserrat)", "sans-serif"],
       },
     },
   },
@@ -19,14 +21,22 @@ module.exports = {
         light: {
           colors: {
             primary: {
-              DEFAULT: "#1A191E",
-              foreground: "#000000",
+              DEFAULT: "#4B2B9E",
+              foreground: "#ffffff",
             },
-            focus: "#FFA500",
+            focus: "#BEF264",
+          },
+        },
+        dark: {
+          colors: {
+            primary: {
+              DEFAULT: "#4B2B9E",
+              foreground: "#ffffff",
+            },
+            focus: "#BEF264",
           },
         },
       },
     }),
   ],
-
 };
