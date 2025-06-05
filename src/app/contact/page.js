@@ -1,7 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import { Input, Button, addToast, Image } from "@heroui/react";
+import Image from "next/image";
+import { Input, Button, addToast } from "@heroui/react";
 import emailjs from "@emailjs/browser";
+import contact from "../../../public/contact.svg";
 
 const Page = () => {
   const [formData, setFormData] = useState({
@@ -55,7 +57,7 @@ const Page = () => {
   };
 
   return (
-    <div className="px-40 flex flex-wrap justify-center gap-1 py-5">
+    <div className="px-40 flex flex-wrap justify-center gap-1 py-5 max-md:px-0">
       <div className="layout-content-container flex flex-col max-w-[960px] flex-1">
         <div className="flex flex-wrap justify-between gap-3 p-4">
           <div className="flex min-w-72 flex-col gap-3">
@@ -127,18 +129,14 @@ const Page = () => {
             isDisabled={isLoading || isFormIncomplete}
             radius="sm"
             onClick={handleSubmit}
+            className="bg-[#4B2B9E]"
           >
             Send Message
           </Button>
         </div>
       </div>
-      <div className="flex justify-center items-center flex-1 min-w-[300px]">
-        <Image
-          isZoomed
-          alt="Contact Section Image"
-          src="https://heroui.com/images/fruit-1.jpeg"
-          width={450}
-        />
+      <div className="flex justify-center items-center flex-1 min-w-[300px] max-md:hidden">
+        <Image src={contact} alt="Contact Section Image" width={450} />
       </div>
     </div>
   );

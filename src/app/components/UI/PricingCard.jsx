@@ -7,11 +7,17 @@ const PricingCard = ({ projectType, projectPrice, duration, features }) => {
     <div className="flex flex-1 flex-col gap-4 rounded-xl border border-solid border-[#dbe0e6] bg-white p-6">
       <div className="flex flex-col gap-1">
         <h1 className="text-base font-bold leading-tight">{projectType}</h1>
-        <span className="text-3xl font-black leading-tight tracking-[-0.033em]">
+        <span className="text-2xl font-black leading-tight tracking-[-0.033em]">
           {projectPrice}
         </span>
       </div>
-      <Button as={Link} href="#contact-us" color="primary" radius="full">
+      <Button
+        as={Link}
+        href="#contact-us"
+        color="primary"
+        radius="full"
+        className="bg-[#4B2B9E]"
+      >
         Get a Quote
       </Button>
       <div className="flex flex-col gap-2">
@@ -23,6 +29,7 @@ const PricingCard = ({ projectType, projectPrice, duration, features }) => {
               height="20px"
               fill="currentColor"
               viewBox="0 0 256 256"
+              className="text-[#4B2B9E]"
             >
               <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
             </svg>
@@ -37,6 +44,7 @@ const PricingCard = ({ projectType, projectPrice, duration, features }) => {
               height="20px"
               fill="currentColor"
               viewBox="0 0 256 256"
+              className="text-[#4B2B9E]"
             >
               <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
             </svg>
@@ -51,6 +59,7 @@ const PricingCard = ({ projectType, projectPrice, duration, features }) => {
               height="20px"
               fill="currentColor"
               viewBox="0 0 256 256"
+              className="text-[#4B2B9E]"
             >
               <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
             </svg>

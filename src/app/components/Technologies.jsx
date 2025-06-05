@@ -18,8 +18,8 @@ const Technologies = () => {
     const scrollingImages = [...imageUrls, ...imageUrls]
 
     return (
-        <div className="overflow-hidden py-8">
-            <h2 className="text-[#0c131d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-5">
+        <div className="overflow-hidden py-12 text-center">
+            <h2 className="font-bold leading-tight text-[32px] tracking-[-0.015em] py-16">
                 Technologies We Use
             </h2>
 

@@ -1,25 +1,31 @@
-import React from 'react'
-import { Card, CardHeader, Image } from "@heroui/react"
+import React from "react";
+import { Card, CardHeader, Button, Link } from "@heroui/react";
+import Image from "next/image";
 
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:2418775954.
+const Cards = ({ Title, Description, CoverImage }) => {
+  return (
+    <Card
+      className="flex justify-around items-center p-4 h-[350px] w-[280px]"
+      radius="sm"
+      shadow="sm"
+    >
+      <Image src={CoverImage} alt="Image" height={140} width={140}/>
+      <CardHeader className="flex flex-col">
+        <p className="text-large font-bold text-center">{Title}</p>
+        <h4 className=" font-medium text-tiny text-center">{Description}</h4>
+      </CardHeader>
+      <Button
+        as={Link}
+        href="#contact-us"
+        color="primary"
+        radius="sm"
+        className="bg-[#4B2B9E]"
+      >
+        Learn more
+      </Button>
+    </Card>
+  );
+};
 
-// Suggested code may be subject to a license. Learn more: ~LicenseLog:2418775954.  
-const Cards = ({Title, Description, CoverImage}) => {
-    return (
-        <Card className="flex flex-1 col-span-12 sm:col-span-4 h-[300px]" radius='sm'>
-            <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-                <p className="text-large text-white uppercase font-bold">{Title}</p>
-                <h4 className="text-white/60 font-medium text-tiny">{Description}</h4>
-            </CardHeader>
-            <Image
-                removeWrapper
-                isZoomed
-                alt="Card background"
-                className="z-0 w-full h-full object-cover"
-                src={CoverImage}
-                radius='sm'
-            />
-        </Card>
-    )
-}
-
-export default Cards
+export default Cards;

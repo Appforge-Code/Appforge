@@ -83,7 +83,7 @@ const Contact = () => {
               isDisabled={loading || isInvalid}
               onClick={handleSendEmail}
               radius="none"
-              className="rounded-l-none rounded-r-medium max-md:w-2"
+              className="rounded-l-none rounded-r-medium max-md:w-2 bg-[#4B2B9E]"
             >
               <Image
                 src={SendMainIcon}

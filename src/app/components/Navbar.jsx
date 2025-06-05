@@ -18,13 +18,7 @@ import { usePathname } from "next/navigation";
 const Navibar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
-  const menuItems = [
-    "Service",
-    "About",
-    "Contact",
-    "Career",
-    "Request a Quote",
-  ];
+  const menuItems = ["Service", "About", "Contact", "Career"];
 
   useEffect(() => {
     setIsMenuOpen(false);
@@ -81,12 +75,21 @@ const Navibar = () => {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <a className="text-sm font-medium leading-normal" href="#">
+            <Link
+              href={"/career"}
+              className="text-sm font-medium leading-normal"
+            >
               Career
-            </a>
+            </Link>
           </NavbarItem>
           <NavbarItem>
-            <Button as={Link} href="#contact-us" color="primary" radius="sm">
+            <Button
+              as={Link}
+              href="#contact-us"
+              color="primary"
+              radius="sm"
+              className="bg-[#4B2B9E]"
+            >
               Request a Quote
             </Button>
           </NavbarItem>
@@ -111,6 +114,18 @@ const Navibar = () => {
               </Link>
             </NavbarMenuItem>
           ))}
+          <NavbarMenuItem>
+            <Button
+              as={Link}
+              href="#contact-us"
+              color="primary"
+              radius="sm"
+              className="bg-[#4B2B9E]"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Request a Quote
+            </Button>
+          </NavbarMenuItem>
         </NavbarMenu>
       </Navbar>
     </>

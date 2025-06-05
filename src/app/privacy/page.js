@@ -45,7 +45,7 @@ const page = () => {
                 </p>
                 <h3 className=" text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Contact Us</h3>
                 <p className=" text-base font-normal leading-normal pb-3 pt-1 px-4">
-                    If you have any questions or concerns about this Privacy Policy, please contact us at: Tech Innovators [Address] Email: privacy@appforge.com
+                    If you have any questions or concerns about this Privacy Policy, please contact us at: <br/> Email: privacy@appforge.com
                 </p>
             </div>
         </div>
