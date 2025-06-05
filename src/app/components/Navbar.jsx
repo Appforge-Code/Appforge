@@ -19,7 +19,7 @@ const Navibar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
   const menuItems = [
-    "Services",
+    "Service",
     "About",
     "Contact",
     "Career",
