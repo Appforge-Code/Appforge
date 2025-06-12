@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import "tailwindcss";
 @plugin '../../hero.js';
@@ -7,13 +6,37 @@
 @custom-variant dark (&:is(.dark *));
 
 * {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: "500";
-    font-style: normal;
-    color: "#1a191e";
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: "500";
+  font-style: normal;
+  color: "#1a191e";
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
+
+.floating-element {
+  position: fixed;
+  bottom: -2rem;
+  font-size: 1.5rem;
+  animation-name: floatUp;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) scale(0.5);
+    opacity: 0;
+  }
+}
+
+
